@@ -26,10 +26,10 @@ print(z)
 
 
 # Indices
-print(lane_tech[1])
+'''print(lane_tech[1])
 print(lane_tech[-1])
 print(lane_tech[len(lane_tech)-1])
-
+'''
 # Slices
 print(lane_tech[1:3])
 print(lane_tech[:3])
@@ -43,7 +43,6 @@ def hello_world():
     print("hello world")
 
 # calling a function
-hello_world()
 
 def add_two(n: int):
     """Takes a number and returns that number + 2
@@ -71,10 +70,12 @@ for el in lst:
 # For Loop Template 2
 # do something n times
 for i in range(5):
-    print("Intro to AI")
+    # print("Intro to AI")
+    do = "nothing "
 
 # For Loop Template 3
 # do something for each item in a list but we care about the index
+
 for r in range(len(lst)):
     if lst[r] == 'b':
         lst[r] = 'c'

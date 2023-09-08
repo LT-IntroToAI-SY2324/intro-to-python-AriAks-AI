@@ -13,7 +13,7 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+I knew a little bit about the language python before this class but I think that it will be fun to learn more about the incorporration of AI.
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
