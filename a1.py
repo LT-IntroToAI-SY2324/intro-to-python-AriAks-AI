@@ -25,6 +25,9 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
+    if (n<0):
+        n = n*-1
+    return n
     raise NotImplementedError("absolute")
 
 
@@ -38,6 +41,13 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
+    x = n
+    while n > 2:
+        x = x*(n-1)
+        
+        n = n - 1
+    print(x)
+    return(x)
     raise NotImplementedError("factorial")
 
 
@@ -55,19 +65,25 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    return lst[::2]
+
+     
     raise NotImplementedError("every_other")
 
 
 def sum_list(lst: List[int]) -> int:
-    """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
-    use the built in function `sum`.
-
+    """
     Args:
         lst - a list of numbers
 
     Returns:
         the sum of the passed in list
     """
+    total = 0
+    for num in lst:
+        total += num
+    return total
+
     raise NotImplementedError("sum_list")
 
 
@@ -80,6 +96,14 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
+    total = 0
+    for num in lst:
+        total += num
+
+    print(total / len(lst))
+    return(total / len(lst))
+
+
     raise NotImplementedError("mean")
 
 
@@ -95,6 +119,17 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
+    lst.sort()
+    n = len(lst)
+    if n % 2 == 1:
+        # If odd, return the middle element
+        return lst[n // 2]
+    else:
+        # If even, return the average of the two middle elements
+        middle1 = lst[(n // 2) - 1]
+        middle2 = lst[n // 2]
+        return (middle1 + middle2) / 2
+
     raise NotImplementedError("median")
 
 
@@ -117,6 +152,7 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
+    
     raise NotImplementedError("duck_duck_goose")
 
 
