@@ -152,6 +152,10 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
+    x = 0
+    for num in lst:
+        x = x +2
+        lst.remove(x3)
     
     raise NotImplementedError("duck_duck_goose")
 

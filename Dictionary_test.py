@@ -19,7 +19,6 @@
 #     new.append(x[y])
 #     y = y + 2
 
-import tkinter 
 import tkinter as tk
 
 def on_button_click(event):
